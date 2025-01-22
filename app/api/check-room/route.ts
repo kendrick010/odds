@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import checkRoom from '@/lib/check-room';
+import checkRoom from '@/lib/checkRoom';
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;

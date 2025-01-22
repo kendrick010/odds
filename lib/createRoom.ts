@@ -1,6 +1,6 @@
 import { customAlphabet } from 'nanoid';
 import prisma from './prisma';
-import checkRoom from './check-room';
+import checkRoom from './checkRoom';
 
 const roomIdGenerator = customAlphabet('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789', 6);
 

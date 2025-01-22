@@ -10,12 +10,11 @@
     "lint": "next lint",
     "lint-fix": "(eslint --fix --cache --report-unused-disable-directives . || true) && prettier --write .",
     "lint-check": "eslint --cache --report-unused-disable-directives . && prettier --check .",
-    "prismaDev": "dotenv -e .env.local prisma migrate dev "
+    "prismaDev": "dotenv -e .env.local prisma migrate dev"
   },
   "dependencies": {
     "@prisma/client": "^6.2.1",
     "@supabase/supabase-js": "^2.47.12",
-    "dotenv-cli": "^8.0.0",
     "nanoid": "^5.0.9",
     "next": "15.1.4",
     "react": "^19.0.0",
@@ -26,6 +25,7 @@
     "@types/node": "^20.17.12",
     "@types/react": "^19.0.6",
     "@types/react-dom": "^19",
+    "dotenv-cli": "^8.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
     "eslint-config-prettier": "^9.1.0",
