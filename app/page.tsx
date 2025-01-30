@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { handleCreateGame, handleJoinGame } from '../lib/gameActions';
-import GameRoomPrompt from '../components/GameRoomPrompt';
+import { handleCreateGame, handleJoinGame } from '../lib/gameOptions';
+import GameRoomPrompt from '@/components/gameRoomPrompt';
 
 export default function HomePage() {
   const [gameRoomPromptState, setGameRoomPromptState] = useState(false);
