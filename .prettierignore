@@ -3,6 +3,7 @@
 build/
 node_modules/
 public/
+prisma/
 
 # Ignore env files
 .env

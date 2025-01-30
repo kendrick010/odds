@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import supabase from "../lib/supabase";
-import deleteRoom from "../lib/deleteRoom";
 
 const UserGamePresence = (roomId: string, userId: string) => {
   const [players, setPlayers] = useState<string[]>([]);
