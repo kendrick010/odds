@@ -10,7 +10,8 @@
     "lint": "next lint",
     "lint-fix": "(eslint --fix --cache --report-unused-disable-directives . || true) && prettier --write .",
     "lint-check": "eslint --cache --report-unused-disable-directives . && prettier --check .",
-    "prismaDev": "dotenv -e .env.local prisma migrate dev"
+    "prismaDev": "dotenv -e .env.local prisma migrate dev",
+    "prepare": "husky"
   },
   "dependencies": {
     "@prisma/client": "^6.2.1",
