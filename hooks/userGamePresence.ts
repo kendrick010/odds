@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import supabase from "../lib/supabase"
+import supabase from "../lib/supabase";
 import deleteRoom from "../lib/deleteRoom";
 
 const UserGamePresence = (roomId: string, userId: string) => {
@@ -20,14 +20,14 @@ const UserGamePresence = (roomId: string, userId: string) => {
 
     // Listen for presence changes
     channel.on("presence", { event: "sync" }, () => {
-        const state = channel.presenceState();
-        const activePlayers = Object.keys(state);
-        setPlayers(activePlayers);
-  
-        // Check if all players have left and mark the game as inactive
-        if (activePlayers.length === 0) console.log("empty");
-      });
-      
+      const state = channel.presenceState();
+      const activePlayers = Object.keys(state);
+      setPlayers(activePlayers);
+
+      // Check if all players have left and mark the game as inactive
+      if (activePlayers.length === 0) console.log("empty");
+    });
+
     return () => {
       channel.untrack();
       channel.unsubscribe();

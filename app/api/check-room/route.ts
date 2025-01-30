@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server';
-import checkRoom from '@/lib/checkRoom';
+import { NextRequest, NextResponse } from "next/server";
+import checkRoom from "@/lib/checkRoom";
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
@@ -8,8 +8,7 @@ export async function GET(request: NextRequest) {
   try {
     const validRoom = await checkRoom(roomId);
     return NextResponse.json({ success: true, validRoom: validRoom });
-  } 
-  catch {
-    return NextResponse.json({ success: false, error: 'Unknown Room' }, { status: 500 });
+  } catch {
+    return NextResponse.json({ success: false, error: "Unknown Room" }, { status: 500 });
   }
 }

@@ -1,8 +1,11 @@
-import { customAlphabet } from 'nanoid';
-import prisma from './prisma';
-import checkRoom from './checkRoom';
+import { customAlphabet } from "nanoid";
+import prisma from "./prisma";
+import checkRoom from "./checkRoom";
 
-const roomIdGenerator = customAlphabet('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789', 6);
+const roomIdGenerator = customAlphabet(
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+  6,
+);
 
 export default async function createRoom() {
   let roomId: string;

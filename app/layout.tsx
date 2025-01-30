@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -8,10 +8,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>odds</title>
       </head>
-      
-      <body>
-        {children}
-      </body>
+
+      <body>{children}</body>
     </html>
   );
 }

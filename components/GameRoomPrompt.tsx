@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface GameRoomPromptProps {
   isOpen: boolean;
@@ -7,8 +7,13 @@ interface GameRoomPromptProps {
   children: React.ReactNode;
 }
 
-export default function GameRoomPrompt({ isOpen, onClose, onSubmit, children }: GameRoomPromptProps) {
-  const [roomId, setRoomId] = useState('');
+export default function GameRoomPrompt({
+  isOpen,
+  onClose,
+  onSubmit,
+  children,
+}: GameRoomPromptProps) {
+  const [roomId, setRoomId] = useState("");
 
   if (!isOpen) return null;
 
